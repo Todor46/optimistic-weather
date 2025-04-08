@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunshine Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-card">
+        <h1>Sunshine Forecast</h1>
+        <div class="location-info">
+            <p id="location">Fetching location...</p>
+        </div>
+        <div class="current-weather">
+            <div class="weather-icon">☀️</div> <!-- Simple sun emoji -->
+            <div class="temp-desc">
+                <p id="temperature">25°C</p>
+                <p id="description">Sunny</p>
+            </div>
+        </div>
+        <div class="weather-details">
+            <p>Humidity: 40%</p> <!-- Static optimistic value -->
+            <p>Wind: 5 km/h</p>  <!-- Static optimistic value -->
+        </div>
+        <div class="forecast">
+            <h2>7-Day Optimistic Forecast</h2>
+            <div class="forecast-container">
+                <!-- Repeat this block 7 times -->
+                <div class="forecast-day">
+                    <p class="day-name">Mon</p>
+                    <div class="day-icon">☀️</div>
+                    <p class="day-temp">24°C</p>
+                </div>
+                <div class="forecast-day">
+                    <p class="day-name">Tue</p>
+                    <div class="day-icon">☀️</div>
+                    <p class="day-temp">25°C</p>
+                </div>
+                <div class="forecast-day">
+                    <p class="day-name">Wed</p>
+                    <div class="day-icon">☀️</div>
+                    <p class="day-temp">26°C</p>
+                </div>
+                <div class="forecast-day">
+                    <p class="day-name">Thu</p>
+                    <div class="day-icon">☀️</div>
+                    <p class="day-temp">25°C</p>
+                </div>
+                <div class="forecast-day">
+                    <p class="day-name">Fri</p>
+                    <div class="day-icon">☀️</div>
+                    <p class="day-temp">24°C</p>
+                </div>
+                <div class="forecast-day">
+                    <p class="day-name">Sat</p>
+                    <div class="day-icon">☀️</div>
+                    <p class="day-temp">26°C</p>
+                </div>
+                <div class="forecast-day">
+                    <p class="day-name">Sun</p>
+                    <div class="day-icon">☀️</div>
+                    <p class="day-temp">27°C</p>
+                </div>
+                <!-- End repeat -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f8ff; /* AliceBlue - a light, cheerful color */
+    margin: 0;
+    background: linear-gradient(to bottom, #87CEEB, #f0f8ff); /* SkyBlue to AliceBlue gradient */
+}
+
+.weather-card {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 300px;
+    max-width: 90%;
+}
+
+h1 {
+    color: #1E90FF; /* DodgerBlue */
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.location-info p {
+    font-weight: bold;
+    color: #555;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.current-weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.weather-icon {
+    font-size: 4em; /* Larger emoji */
+    margin-right: 20px;
+}
+
+.temp-desc p {
+    margin: 5px 0;
+}
+
+#temperature {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #FF6347; /* Tomato */
+}
+
+#description {
+    font-size: 1.2em;
+    color: #4682B4; /* SteelBlue */
+    text-transform: capitalize;
+}
+
+.weather-details p {
+    margin: 8px 0;
+    font-size: 1em;
+    color: #666;
+}
+
+.forecast {
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.forecast h2 {
+    font-size: 1.4em;
+    color: #1E90FF; /* DodgerBlue */
+    margin-bottom: 15px;
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto; /* Allows horizontal scrolling on small screens if needed */
+    padding-bottom: 10px; /* Space for scrollbar if it appears */
+}
+
+.forecast-day {
+    flex: 0 0 auto; /* Prevent shrinking/growing, base size on content */
+    width: calc(100% / 7 - 10px); /* Distribute width, accounting for gaps */
+    min-width: 50px; /* Minimum width for smaller screens */
+    text-align: center;
+    background-color: #f8f9fa; /* Light grey background */
+    padding: 10px 5px;
+    border-radius: 8px;
+    margin-right: 5px; /* Small gap between days */
+}
+
+.forecast-day:last-child {
+    margin-right: 0;
+}
+
+.forecast-day p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.day-name {
+    font-weight: bold;
+    color: #555;
+}
+
+.day-icon {
+    font-size: 1.8em;
+    margin: 5px 0;
+}
+
+.day-temp {
+    color: #FF6347; /* Tomato */
+    font-weight: bold;
+}
